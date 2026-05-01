@@ -38,6 +38,6 @@ openclaw --version
 ### Caveats for containers/headless environments
 
 - The `@discordjs/opus` package build scripts are ignored by pnpm (cosmetic warning, not blocking).
-- OpenClaw gateway service uses systemd user services by default. In containers without systemd, run the gateway in the foreground instead: `openclaw gateway --foreground` (or equivalent). This is expected and not a failure.
+- OpenClaw gateway service uses systemd user services by default. In containers without systemd, run the gateway in the foreground with `openclaw gateway run`. This is expected and not a failure.
 - `pnpm approve-builds` is interactive and should NOT be run in automated scripts. The opus build skip is harmless.
 
